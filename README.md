@@ -1,2 +1,2 @@
 # the-lazy-learner.github.io
-personal pseudo site
+My personal pseudo-website. I wonder why you reached here for.
