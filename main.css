@@ -1,0 +1,16 @@
+body {
+  font-family: 'Noto Serif', Georgia, 'Times New Roman', Times, serif;
+}
+
+th {
+  width: 130px;
+  max-width: 130px;
+  min-width: 130px;
+}
+
+td {
+  width: 130px;
+  max-width: 130px;
+  min-width: 130px;
+  overflow-wrap: break-word;
+}
