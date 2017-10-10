@@ -334,14 +334,3 @@ Use `t!t cmd [tag]` to get more info on a reserved tag, for example: `t!t cmd us
 ```py
 >>> To learn how to create a tag, use 't!t cmd'
 >>> If you want the complete list, get the tagdocs here 'https://the-lazy-learner.github.io/tatsu-tags.html'```}
-
-{aset;cmd#and;This is how you make an and statement, for this tutorial, First let's assume `a` is `{aget;a}` and `b` is `{aget;b}`
-
- `a` and `b` must be `1` for it to be `True` otherwise it will be `False`
-```{if;==;a;1;{if;==;b;1;True;False};False}```
-//Simplified, the code will become//
-**{if;==;a;1;`then`;False}**
-The code for `then` is **{if;==;b;1;true;false}**
-Meaning if `a` is not `1` it'll do `else` which is `False`.
-If it is `1`, it'll do `then` instead, and it will check if `b` is equal to `1`. If it isn't, it'll set it to `False`, if it is 1, it'll set it to `True`.
-Reserved tags used: `if` | `aget`
