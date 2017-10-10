@@ -226,12 +226,7 @@ Example Out: 175654938540638208```}{aset;cmd#userxp;**Tag: __userxp__**```ruby
 Usage: {lb}userxp[{semi}user]{rb}
 Description: Returns the `user`s amount of global experience. The `user` value can be anything with an id in it (including @mentions). Default `user` is the person that called the command.
 Example In: {lb}userxp{semi}@David{rb}
-Example Out: 319675```}{aset;cmd#userscore;Tag: userscore
-Usage: {lbuserscore[{semi}userid]{rb}
-Description: Displays `userid`s current score, defaults to the user calling the tag.
-Example In: {lb}userscore{semi}@Kao#9678{rb}
-Example Out: 81624
-}
+Example Out: 319675```}
 
 t!t test {aset;cmd#avars;**Tag: __avars__**```ruby
 Usage: {lb}avars[{semi}index]{rb}
@@ -279,7 +274,31 @@ Example Out: 4```}{aset;cmd#incr;**Tag: __incr__**```ruby
 Usage: {lb}incr{semi}number{rb}
 Description: Increases number by 1.
 Example In: {lb}incr{semi}5{rb}
-Example Out: 6```}
+Example Out: 6```}{aset;cmd#userscore;**Tag: __userscore__**```ruby
+Usage: {lb}userscore[{semi}userid]{rb}
+Description: Displays `userid`s current score, defaults to the user calling the tag.
+Example In: {lb}userscore{semi}@Kao#9678{rb}
+Example Out: 81624```}
+
+t!t test {aset;cmd#list;```ruby
+`Tags Tutorial Menu` ```
+Use `t!t cmd [tag]` to get more info on a reserved tag, for example: `t!t cmd username`
+
+**1. Statements - `if` | `switch`
+2. Operations - `abs` | `avg` | `base` | `bit` | `ceil` | `floor` | `math` | `round` | `incr` | `decr`
+3. Randomizers - `randarg` | `randchoice` | `randint` | `randstr` | `randuser` | `shuffle` | `emojis`
+4. Evaluators - `args` | `argslen` | `length` | `substr` | `time` | `indexof` | `lastindexof`
+5. Manipulators - `lower` | `pad` | `regexreplace` | `repeat` | `replace` | `reverse` | `upper`
+6. Executors - `loop` | `inject` | `exec`
+7. Variables - `get` | `aget` | `set` | `aset` | `vars` | `avars`
+8. Channel - `channelid` | `channelname` | `channeltopic`
+9. Server - `serverid` | `servername` | `serverusers`
+10. User - `usercreatedat` | `usercredits` | `userdiscrim` | `userid` | `username` | `usernick` | `userperms` | `userpoints` | `userscore ` | `userrep` | `userrole` | `userxp`
+11. Noparse - `lb` | `rb` | `nl` | `semi` **
+
+```py
+>>> To learn how to create a tag, use 't!t cmd'
+>>> If you want the complete list, get the tagdocs here 'https://the-lazy-learner.github.io/tatsu-tags.html'```}
 
 
 
@@ -315,22 +334,5 @@ Tatsumaki: `Hello David!`
 ```py
 >>> To view the full list of reserved tags, do 't!t cmd list'```}
 
-t!t test {aset;cmd#list;```ruby
-`Tags Tutorial Menu` ```
-Use `t!t cmd [tag]` to get more info on a reserved tag, for example: `t!t cmd username`
 
-**1. Statements - `if` | `switch`
-2. Operations - `abs` | `avg` | `base` | `bit` | `ceil` | `floor` | `math` | `round` | `incr` | `decr`
-3. Randomizers - `randarg` | `randchoice` | `randint` | `randstr` | `randuser` | `shuffle` | `emojis`
-4. Evaluators - `args` | `argslen` | `length` | `substr` | `time` | `indexof` | `lastindexof`
-5. Manipulators - `lower` | `pad` | `regexreplace` | `repeat` | `replace` | `reverse` | `upper`
-6. Executors - `loop` | `inject` | `exec`
-7. Variables - `get` | `aget` | `set` | `aset` | `vars` | `avars`
-8. Channel - `channelid` | `channelname` | `channeltopic`
-9. Server - `serverid` | `servername` | `serverusers`
-10. User - `usercreatedat` | `usercredits` | `userdiscrim` | `userid` | `username` | `usernick` | `userperms` | `userpoints` | `userrep` | `userrole` | `userxp`
-11. Noparse - `lb` | `rb` | `nl` | `semi` **
 
-```py
->>> To learn how to create a tag, use 't!t cmd'
->>> If you want the complete list, get the tagdocs here 'https://the-lazy-learner.github.io/tatsu-tags.html'```}
