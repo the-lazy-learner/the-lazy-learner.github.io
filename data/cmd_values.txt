@@ -226,7 +226,12 @@ Example Out: 175654938540638208```}{aset;cmd#userxp;**Tag: __userxp__**```ruby
 Usage: {lb}userxp[{semi}user]{rb}
 Description: Returns the `user`s amount of global experience. The `user` value can be anything with an id in it (including @mentions). Default `user` is the person that called the command.
 Example In: {lb}userxp{semi}@David{rb}
-Example Out: 319675```}
+Example Out: 319675```}{aset;cmd#userscore;Tag: userscore
+Usage: {lbuserscore[{semi}userid]{rb}
+Description: Displays `userid`s current score, defaults to the user calling the tag.
+Example In: {lb}userscore{semi}@Kao#9678{rb}
+Example Out: 81624
+}
 
 t!t test {aset;cmd#avars;**Tag: __avars__**```ruby
 Usage: {lb}avars[{semi}index]{rb}
