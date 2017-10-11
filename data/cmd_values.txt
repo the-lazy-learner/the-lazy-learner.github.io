@@ -62,11 +62,15 @@ Example Out: 5```}{aset;cmd#get;**Tag: __get__**```ruby
 Usage: {lb}get{semi}name{rb}
 Description: Returns the value of tag variable `name`
 Example In: {lb}get{semi}count{rb}
-Example Out: 12```}
+Example Out: 12```}{aset;cmd#space;**Tag: __space__**```rb
+Usage: {lb}space[;number]{rb}
+Description: Returns spaces amounting to `number`. Defaults to 1. (for escaping purposes)
+Example In: {lb}space{semi}5{rb}
+Example Out: }
 
 t!t test {aset;cmd#if;**Tag: __if__**```ruby
 Usage: {lb}if{semi}comparator{semi}value1{semi}value2{semi}then{semi}else{rb}
-Description: Compares `value1` to `value2` using `comparator` If true returns `then`, if false returns `else` Valid compators are: `==`, `!=`, `<`, `>`, `<=`, `>=`, `||`, `&&` 
+Description: Compares `value1` to `value2` using `comparator` If true returns `then`, if false returns `else` Valid compators are: `==`, `!=`, `<`, `>`, `<=`, `>=`, `||`, `&&`
 Example In: {lb}if{semi}<{semi}0{semi}8{semi}Zero is less than eight.{semi}Zero is greater than eight.{rb}
 Example Out: Zero is less than eight.```}{aset;cmd#lb;**Tag: __lb__**```ruby
 Usage: {lb}lb{rb}
@@ -90,7 +94,7 @@ Description: Adds `pattern` to the `direction` of `text` until its length is `si
 Example In: {lb}pad{semi}l{semi}> Vapor{semi}11{semi}-={rb}
 Example Out: -=-=> Vapor```}{aset;cmd#randarg;**Tag: __randarg__**```ruby
 Usage: {lb}randarg{rb}
-Description: Returns a random argument provided by the tag caller. 
+Description: Returns a random argument provided by the tag caller.
 Example In:	{lb}randarg{rb}
 Example Out: World!```}
 
@@ -169,7 +173,7 @@ Example In: {lb}substr{semi}Is this working?{semi}9{semi}12{rb}
 Example Out: work```}{aset;cmd#switch;**Tag: __switch__**```ruby
 Usage: {lb}switch{semi}value{semi}case1{semi}content1{semi}[{semi}case2{semi}content2...][{semi}default]{rb}
 Description: Finds the `case` that is equal to `value`, and returns the corresponding `content` If no equal `case` is found will return `default`
-Example In: 
+Example In:
 Example Out: ```}{aset;cmd#time;**Tag: __time__**```ruby
 Usage: {lb}time[{semi}format[{semi}timestamp[{semi}timezone]]]{rb}
 Description: Returns a UNIX `timestamp` in a certain time `format` and in a certain TZ `timezone` Default of `format` is `LTS`, for `timestamp` is the current time and for `timezone` is `Asia/Singapore`
@@ -294,7 +298,7 @@ Use `t!t cmd [tag]` to get more info on a reserved tag, for example: `t!t cmd us
 8. Channel - `channelid` | `channelname` | `channeltopic`
 9. Server - `serverid` | `servername` | `serverusers`
 10. User - `usercreatedat` | `usercredits` | `userdiscrim` | `userid` | `username` | `usernick` | `userperms` | `userpoints` | `userscore ` | `userrep` | `userrole` | `userxp`
-11. Noparse - `lb` | `rb` | `nl` | `semi` **
+11. Noparse - `lb` | `rb` | `nl` | `semi` | `space` **
 
 ```py
 >>> To learn how to create a tag, use 't!t cmd'
@@ -333,6 +337,3 @@ David: `t!t greet`
 Tatsumaki: `Hello David!`
 ```py
 >>> To view the full list of reserved tags, do 't!t cmd list'```}
-
-
-
