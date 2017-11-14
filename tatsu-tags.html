@@ -141,6 +141,14 @@
                     <td>this</td>
                 </tr>
                 <tr>
+                  <td>expr</td>
+                  <td>Evaluates a math <code>expression</code> containing common operators and a few functions. Valid operators are <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>^</code> and <code>!</code> (factorial). Functions need to have parameters in () and include <code>exp</code>, <code>sqrt</code>, <code>gamma</code>, <code>abs</code>, <code>floor</code>,
+                      <code>ceil</code>, and <code>round</code>. Constants suuported include <code>PI</code> and <code>E</code>.</td>
+                  <td><code>{expr;expression}</code></td>
+                  <td><code>{expr;round(2.15)}</code></td>
+                  <td>2</td>
+                </tr>
+                <tr>
                     <td>floor</td>
                     <td>Rounds <code>number</code> down.</td>
                     <td><code>{floor;number}</code></td>
@@ -266,6 +274,13 @@
                     <td><code>{randchoice;choice1;choice2[;choice3...]}</code></td>
                     <td><code>{randchoice;dog;snake;cat;horse}</code></td>
                     <td>snake</td>
+                </tr>
+                <tr>
+                  <td>randexp</td>
+                  <td>Generates a random string that matches the given <code>regex</code>. (Note that the regex syntax differs only in terms of options for regex, flags aren't allowed, and the <code>regex</code> doesn't have to be in //)</td>
+                  <td>{randexp;regex}</td>
+                  <td>{randexp;Hell\d}</td>
+                  <td>Hell0</td>
                 </tr>
                 <tr>
                     <td>randint</td>
