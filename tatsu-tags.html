@@ -127,7 +127,7 @@
                 </tr>
                 <tr>
                     <td>emojis</td>
-                    <td>Searches for <code>amount</code> emojis related to <code>query</code> with an offset of <code>offset</code>                    joined together by <code>seperator</code></td>
+                    <td>Searches for <code>amount</code> emoijis related to <code>query</code> with an offset of <code>offset</code>                    joined together by <code>seperator</code></td>
                     <td><code>{emojis;query[;amount[;offset[;seperator]]]}</code></td>
                     <td><code>{emojis;life;4;0;, }</code></td>
                     <td><img alt="✌" src="https://twemoji.maxcdn.com/16x16/270c.png" style="border: medium none;">, <img alt="😌" src="https://twemoji.maxcdn.com/16x16/1f60c.png" style="border: medium none;">, <img alt="🙌" src="https://twemoji.maxcdn.com/16x16/1f64c.png" style="border: medium none;">, <img alt="♻" src="https://twemoji.maxcdn.com/16x16/267b.png" style="border: medium none;"></td>
@@ -279,7 +279,7 @@
                   <td>randexp</td>
                   <td>Generates a random string that matches the given <code>regex</code>. (Note that the regex syntax differs only in terms of options for regex, flags aren't allowed, and the <code>regex</code> doesn't have to be in //)</td>
                   <td><code>{randexp;regex}</code></td>
-                  <td><code>{randexp;Hell\d}</code></td>
+                  <td><code>{randexp;/Hell\d/g}</code></td>
                   <td>Hell0</td>
                 </tr>
                 <tr>
@@ -401,7 +401,7 @@
                     <td>Returns the characters of <code>string</code> between <code>start</code> and <code>end</code>. Default value
                         for <code>start</code> is <code>0</code> and for <code>end</code> it is the <code>string</code>'s length.</td>
                     <td><code>{substr;string;start;end}</code></td>
-                    <td><code>{substr;Is this working?;9;12}</code></td>
+                    <td><code>{substr;Is this working?;8;4}</code></td>
                     <td>work</td>
                 </tr>
                 <tr>
